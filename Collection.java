@@ -93,10 +93,6 @@ public class Collection {
         for (int i = 0; i < cardCount; i++) {
             if (cards[i].getName().equals(name) && counts[i] > 0) {
                 counts[i]--;
-                if (counts[i] == 0) {
-                    cards[i] = null;
-                    cardCount--;
-                }
                 return;
             }
         }
@@ -111,10 +107,6 @@ public class Collection {
         for (int i = 0; i < cardCount; i++) {
             if (cards[i].getName().equals(name) && counts[i] > 0) {
                 counts[i]--;
-                if (counts[i] == 0) {
-                    cards[i] = null;
-                    cardCount--;
-                }
                 return;
             }
         }

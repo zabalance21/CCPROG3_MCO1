@@ -85,20 +85,6 @@ public class Collection {
     }
 
     /**
-     * Decreases the count of a card by name
-     *
-     * @param name the name of the card
-     */
-    public void decreaseCardCount(String name) {
-        for (int i = 0; i < cardCount; i++) {
-            if (cards[i].getName().equals(name) && counts[i] > 0) {
-                counts[i]--;
-                return;
-            }
-        }
-    }
-
-    /**
      * Removes one instance of a card from the collection
      *
      * @param name the name of the card to remove

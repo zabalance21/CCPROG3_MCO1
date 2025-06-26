@@ -46,7 +46,6 @@ public class DeckManager {
      */
     public void createDeck(TradingCardInventorySystem tcis) {
         System.out.println("\n=== Create New Deck ===");
-        Scanner scanner = new Scanner(System.in);
         Deck[] decks = tcis.getDecks();
         int deckCount = tcis.getDeckCount();
 
@@ -80,7 +79,6 @@ public class DeckManager {
      */
     public void deleteDeck(TradingCardInventorySystem tcis) {
         System.out.println("\n=== Delete Deck ===");
-        Scanner scanner = new Scanner(System.in);
         Deck[] decks = tcis.getDecks();
         int deckCount = tcis.getDeckCount();
 
@@ -140,7 +138,6 @@ public class DeckManager {
      */
     public void addCardToDeck(TradingCardInventorySystem tcis) {
         Deck[] decks = tcis.getDecks();
-        Scanner scanner = new Scanner(System.in);
         int deckCount = tcis.getDeckCount();
         System.out.println("\n=== Add Card to Deck ===");
 
@@ -217,7 +214,6 @@ public class DeckManager {
      */
     public void removeCardFromDeck(TradingCardInventorySystem tcis) {
         System.out.println("\n=== Remove Card from Deck ===");
-        Scanner scanner = new Scanner(System.in);
         Deck[] decks = tcis.getDecks();
         int deckCount = tcis.getDeckCount();
 
@@ -279,7 +275,6 @@ public class DeckManager {
      */
     public void viewDeck(TradingCardInventorySystem tcis) {
         System.out.println("\n=== View Deck ===");
-        Scanner scanner = new Scanner(System.in);
         Deck[] decks = tcis.getDecks();
         int deckCount = tcis.getDeckCount();
 

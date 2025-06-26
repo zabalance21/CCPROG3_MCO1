@@ -47,7 +47,6 @@ public class BinderManager {
      * Creates a new binder
      */
     public void createBinder(TradingCardInventorySystem tcis) {
-        Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
 
@@ -122,7 +121,6 @@ public class BinderManager {
      * Displays all binders
      */
     public void displayBinders(TradingCardInventorySystem tcis) {
-        Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
         System.out.println("Available Binders:");
@@ -208,7 +206,6 @@ public class BinderManager {
      */
     public void removeCardFromBinder(TradingCardInventorySystem tcis) {
         System.out.println("\n=== Remove Card from Binder ===");
-        Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
 
@@ -270,7 +267,6 @@ public class BinderManager {
      */
     public void tradeCard(TradingCardInventorySystem tcis) {
         System.out.println("\n=== Trade Card ===");
-        Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
 
@@ -366,7 +362,6 @@ public class BinderManager {
      */
     public void viewBinder(TradingCardInventorySystem tcis) {
         System.out.println("\n=== View Binder ===");
-        Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
 

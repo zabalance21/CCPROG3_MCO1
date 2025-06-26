@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class BinderManager {
+    private Scanner scanner;
+
+    public BinderManager(Scanner sc){
+        this.scanner = sc;
+    }
     /**
      * Manages existing binders
      */

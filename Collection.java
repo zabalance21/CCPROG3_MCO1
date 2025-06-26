@@ -11,15 +11,17 @@ public class Collection {
     private Card[] cards;
     private int[] counts;
     private int cardCount;
-
+    private Scanner scanner;
     /**
      * Constructor for Collection
      * Initializes arrays with capacity for 1000 unique cards
      */
-    public Collection() {
+    public Collection(Scanner sc) {
         this.cards = new Card[200]; // Maximum 1000 unique cards
         this.counts = new int[200];
         this.cardCount = 0;
+        this.scanner = sc;
+        
     }
 
     /**

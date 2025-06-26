@@ -19,13 +19,13 @@ public class TradingCardInventorySystem {
      * Constructor for TradingCardInventorySystem
      * Initializes the collection, arrays for binders and decks, and scanner
      */
-    public TradingCardInventorySystem() {
+    public TradingCardInventorySystem(Scanner scanner) {
+        this.scanner = Scanner;
         this.collection = new Collection();
         this.binders = new Binder[50];
         this.decks = new Deck[50];
         this.binderCount = 0;
         this.deckCount = 0;
-        this.scanner = new Scanner(System.in);
     }
 
     /**

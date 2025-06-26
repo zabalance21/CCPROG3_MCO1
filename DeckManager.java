@@ -1,7 +1,11 @@
 import java.util.Scanner;
 
 public class DeckManager {
+    private Scanner scanner;
 
+    public DeckManager(Scanner sc){
+        this.scanner = sc;
+    }
     /*
      * Manages existing decks
      */

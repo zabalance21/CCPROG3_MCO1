@@ -132,11 +132,11 @@ public class BinderManager {
      * Adds a card to a binder
      */
     public void addCardToBinder(TradingCardInventorySystem tcis) {
-        System.out.println("\n=== Add Card to Binder ===");
         Scanner scanner = new Scanner(System.in);
         Binder[] binders = tcis.getBinders();
         int binderCount = tcis.getBinderCount();
 
+        System.out.println("\n=== Add Card to Binder ===");
         if (binderCount == 0) {
             System.out.println("No binders available.");
             System.out.print("Press Enter to continue...");
@@ -340,6 +340,7 @@ public class BinderManager {
             String response = scanner.nextLine().trim().toLowerCase();
 
             if (!response.equalsIgnoreCase("y") && !response.equalsIgnoreCase("yes")) {
+                tcis.getCollection().addCard(outgoingCard);
                 System.out.println("Trade cancelled.");
                 System.out.print("Press Enter to continue...");
                 scanner.nextLine();
@@ -349,7 +350,7 @@ public class BinderManager {
 
         // If everything successful, execute trade
         selectedBinder.removeCard(outgoingCardName);
-        tcis.getCollection().addCard(incomingCard);
+        selectedBinder.addCard(incomingCard);
         System.out.println("Trade completed successfully!");
         System.out.print("Press Enter to continue...");
         scanner.nextLine();

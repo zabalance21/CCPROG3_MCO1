@@ -195,7 +195,7 @@ public class TradingCardInventorySystem {
             System.out.print("Press Enter to continue...");
             scanner.nextLine();
         } else if (choice == 2) {
-            collection.decreaseCardCount(name);
+            collection.removeCard(name);
             System.out.println("Card count decreased successfully!");
             System.out.print("Press Enter to continue...");
             scanner.nextLine();
